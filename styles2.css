@@ -1,0 +1,65 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8C794;
+}
+
+.snail-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.snail {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    animation: shake 2s infinite; /* Moderate speed shaking */
+    height: 200px;
+}
+
+
+@keyframes shake {
+    0%, 100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translate(-50%, -50%) rotate(-10deg);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translate(-50%, -50%) rotate(10deg);
+    }
+}
+
+
+.message-bubble {
+    background-color: #e0f7fa;
+    border-radius: 10px;
+    padding: 10px 15px;
+    max-width: 60%;
+    width: 150px;
+    position: relative;
+    margin: 10px;
+    bottom: 200px;
+    right: 60px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.message-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #e0f7fa;
+    border-bottom: 0;
+    margin-left: 0;
+    margin-bottom: -10px;
+}

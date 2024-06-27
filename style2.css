@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Jaro:opsz@6..72&family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@400..700&family=Jaro:opsz@6..72&family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@400..700&family=Jaro:opsz@6..72&family=Lato&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F8C794;
+  }
+  /* text */
+.text-1{
+     font-family: 'anton', sans-serif;
+     font-size: 100px;
+     text-shadow: 1px 4px #B67352;
+     color: antiquewhite;
+}
+.text-2{
+    font-family: 'Jaro';
+    font-size: 60px;
+    text-shadow: 1px 4px #B67352;
+}
+
+div.text-1{
+  width:100%;
+  overflow:hidden;
+}
+div.text-1 {
+  animation: 1s slide-right;
+}
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+    width: 300%; 
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+/* text 2 animation */
+div.text-2 {
+  width:100%;
+  overflow:hidden;
+}
+div.text-2{
+  animation: slide-left 3s;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes textDelay {
+  0% { opacity: 0; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Apply animation to text */
+.continue-button {
+  animation: textDelay 6s linear forwards;
+}
+.continue-button{
+  font-size: 17px;
+  font-family: 'Shadows Into Light', cursive;
+  padding-left: 400px;
+  cursor: pointer;
+  font-style: italic;
+  
+}
+.continue-button:hover{
+  color:#FEFAE0;
+}
+
+
+  /* button */
+  .button-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 10px; /* Adds space between the buttons */
+}
+.button {
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+    font-family: 'Shadows Into Light', cursive;
+    background-color: #ED9455;
+    border-radius: 15px;
+    height: 80px;
+    width: 110px;
+    text-transform: uppercase;
+    border: 4px solid #B67352;
+    color: #FEFAE0;
+    cursor: pointer;
+    font-size: 30px;
+    box-shadow: 0px 3px #A6CF98;
+}
+.button:active{
+    background-color: #FBCEB1;
+    box-shadow: 0 5px #D27D2D;
+    transform: translateY(4px);
+}
+.button-container > .button:nth-child(13) {
+    grid-column: 2 / 3; /* Span the 13th button across both columns */
+    justify-self: center; /* Center the button within the grid column */
+}
+
+.button:hover{
+  background-color: #FF9130;
+  transform: scale(1.1);
+}
+
+  .container {
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    
+  }
+
+  .hidden{
+    display:none;
+  }
+  
+  @media (max-width: 767px) {
+    .text-1{
+      font-size: 70px;
+      flex-wrap: wrap;
+    }
+ .text-2{
+     font-size: 40px; 
+ }
+  .text-container{
+    width: 400px;
+  }
+ .continue-button{
+  padding-left: 250px;
+ }
+
+  };

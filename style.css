@@ -1,0 +1,588 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap'); 
+
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Lato&display=swap');
+
+body{
+
+    background-color: #F8C794;
+    
+}
+.container{
+    text-align: center;
+    display: flex;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+    font-family: 'IBM Plex Mono', monospace;
+    width: 100%;
+}
+ .page1{ 
+    color: #FEFAE0;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin-top: 0;
+    font-size: 50px;
+    text-shadow: 1px 4px #B67352;
+}
+.box{
+    
+    height:40vh;
+    width: 350px;
+    border-radius: 5%;
+}
+.heart{
+    cursor: pointer;
+}
+
+.heart:hover{
+    transform: scale(1.4);
+}
+.btn {
+    font-family: 'Shadows Into Light', cursive;
+    background-color: #ED9455;
+    border-radius: 15px;
+    height: 50px;
+    width: 150px;
+    text-transform: uppercase;
+    border: 2px solid #B67352;
+    color: #FEFAE0;
+    cursor: pointer;
+    font-size: 15px;
+    box-shadow: 0px 3px #A6CF98;
+}
+.btn:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+.btn:hover{
+    background-color: #FF9130;
+    transform: scale(0.9);
+
+}
+
+.web {
+    margin-top: 20px ;
+}
+p{
+    font-size: 20px;
+}
+
+.turtle{
+    height: 130px;
+    cursor: pointer;
+}
+
+
+
+/* quiz css */
+#container {
+  
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 10px;
+}
+#quiz {
+    background-color: #ED9455;
+    border: 3px solid #B67352;
+    height: 80%;
+    width: 450px;
+    border-radius: 2%;
+    font-family: "Shadows Into Light", sans-serif;
+    font-weight: bold;
+}
+.page2-heading{
+    color: #FEFAE0;
+    padding-bottom: 0;
+    font-size: 30px;
+}
+.qs{
+    font-size: 17px;
+}
+.questions{
+    text-align: center;
+    font-size: medium;
+    font-family: "Shadows Into Light", sans-serif;
+    font-weight: bold;
+    border: 2.5px solid #524C42;
+    height: 40px;
+    width: 250px;
+    border-radius: 7px;
+    text-transform: uppercase; 
+}
+
+#myBtn{
+    margin-top: 20px;
+    height: 30px;
+    width: 100px;
+    border: 2px solid #524C42;
+    border-radius: 4px;
+    background-color: #F6FDC3;
+    font-family: 'Shadows Into Light', sans-serif;
+    
+}
+#myBtn:active {
+    background-color: #FF8080;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+  }
+
+#myBtn:hover{
+    background-color:  #CDFAD5;
+
+}
+.back{
+    margin-right: 400px;
+    text-decoration: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: #FEFAE0;
+
+}
+.back:active {
+    
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+  }
+
+
+/*pop up message*/
+#toggle{
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+span{
+    display: none;
+}
+#toggle:checked + span{
+    display: block;
+}
+.turtletxt{
+    color:#FEFAE0 ;
+    font-size: 20px;
+    text-shadow: 1px 2px #B67352;
+} 
+#result{
+    font-size: 15px;
+}
+
+/*modal*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%; /* Could be more or less, depending on screen size */
+    border-radius: 4px;
+  }
+
+  
+/* question mark */
+#question-mark{
+    cursor: pointer;
+    height: 75px;
+}
+#question-mark:active{
+    transform: translateY(4px);
+}
+.hidden{
+    display: none;
+}
+#newpost{
+    color: #000000;
+    position: relative;top:0px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0 ;
+}
+
+/*restart button*/
+#restart{
+    margin-top: 20px;
+    height: 30px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: #F6FDC3;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#restart:active {
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+  }
+  #restart:hover{
+    background-color:  #CDFAD5;
+}
+/*first page*/
+#fpage-container{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 100vh;
+}
+input[type=password]{
+    background: transparent ;
+    max-width: 300px;
+    border: none;
+    border-bottom: 2px solid #B67352;
+}
+input[type=password]:active{
+    border: none;
+    border-color: none;
+}
+.password{
+    text-align: center;
+    font-size: medium;
+    font-family:'Shadows Into Light', cursive;;
+    height: 40px;
+    width: 250px;
+    border-radius: 3px;
+    margin-right: 30px;
+}
+
+#submit-password{
+    margin-top: 20px;
+    height: 40px;
+    width: 100px;
+    border: 1px solid #B67352;
+    border-radius: 4px;
+    background-color: #ED9455;
+    font-family:'Shadows Into Light', cursive;;
+    color: white;
+    font-size: 15px;
+}
+
+#submit-password:hover{
+    background-color: goldenrod;
+}
+
+#submit-password:active{
+    transform: translateY(4px);
+  }
+
+.gtwebsite{
+    text-decoration: none;
+}
+/*go to website button*/
+.gtwebsite{
+    height: 30px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: #F6FDC3;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 0%;
+    margin: 0%;
+
+}
+
+.gtwebsite:active {
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+  }
+  .gtwebsite:hover{
+    background-color:  #CDFAD5;
+}
+/*info section */
+#info-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+     padding: 10px;
+    
+}
+.message{
+    width: 400px;
+    height: 500px;
+    text-align:justify;
+}
+.home{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+}
+.bold{
+    font-weight: bold;
+}
+
+.turtle2{
+    cursor: pointer;
+}
+.turtle2:active{
+    transform: translateY(4px);
+}
+/*second page*/
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+}
+.dialog {
+    width: 800px;
+    height: 130px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    position: relative;
+  }
+  
+  .character {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .dialog-box {
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    cursor: pointer;
+   
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+.yamato{
+    position: relative;
+    top: 80px;
+    z-index: 0;
+}
+
+
+.continue  {
+    font-size: 16px;
+}
+#back-button {
+    padding: 10px 10px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    position: relative;
+    bottom: 60px;
+    background-color: transparent;
+  }
+  /* Third Page */
+
+
+
+/* Add this to your existing CSS file or create a new one */
+
+.things-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  .dialog-box.fade-out {
+    animation: fadeOut .3s forwards;
+  }
+  .yamato.fade-out{
+    animation: fadeOut .3s forwards;
+  }
+  
+
+/* for responsiveness */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Adjust styles for laptops here */
+    .container {
+        gap: 40px;
+        width: 100%;
+    }
+
+    .page1 {
+        font-size: 40px;
+    }
+    .btn{
+        height: 35px;
+        width: 120px;
+        font-size: 11px;
+        border-radius: 13px;
+    }
+    .turtle{
+        height: 110px;
+    }
+    #quiz{
+        width: 410px;
+        height: 68%;
+    }
+    .page2-heading{
+        font-size: 27px;
+    }
+    .qs{
+        font-size: 15px;
+    }
+    .questions{
+        height: 35px;
+        width: 240px;
+    }
+    #myBtn{
+        height: 26px;
+        width: 96px;
+    }
+    #question-mark{
+        height: 70px;
+    }
+    .message p{
+        font-size: 18px;
+    }
+    .message{
+        width: 350px;
+        height: 450px;
+    }
+    .yamato{
+        height: 350px;
+    }
+    .dialog{
+        width: 750px;
+        height: 130px;
+        margin: 40px auto;
+        padding: 15px;
+    }
+    .dialog-box{
+        font-size: 15px;
+    }
+    /* Add more adjustments as needed */
+}
+
+/* For mobile phones (screen width up to 767px) */
+@media (max-width: 767px) {
+    /* Adjust styles for mobile phones here */
+    .container {
+        gap: 20px;
+    }
+
+    .page1 {
+        font-size: 30px;
+    }
+    .btn{
+        height: 25px;
+        width: 70px;
+        font-size: 10px;
+    }
+    .turtle{
+        height: 100px;
+    }
+    #quiz{
+        width: 330px;
+        height: 75%;
+    }
+    .page2-heading{
+        font-size: 22px;
+    }
+    .qs{
+        font-size: 11px;
+    }
+    .questions{
+        height: 26px;
+        width: 180px;
+    }
+    #myBtn{
+        height: 23px;
+        width: 93px;
+    }
+    #question-mark{
+        height: 50px;
+    }
+    input[type=password]{
+        flex-wrap: nowrap;
+    }
+    .message p{
+        font-size: 10px;
+    }
+    .message{
+        width: 250px;
+        height: 450px;
+    }
+    .yamato{
+        height: 250px;
+    }
+    .dialog{
+        width: 400px;
+        height: 120px;
+        margin: 20px auto;
+        padding: 15px;
+    }
+    .dialog-box{
+        font-size: 10px;
+        margin-bottom: 5px;
+        padding: 5px;
+    }
+    .oden{
+        height: 200px;
+    }
+    .main-container{
+        align-items: center;
+    }
+    .character{
+        font-size: 9px;
+    }
+    .home{
+        padding-left: 0px;
+    }
+    /* Add more adjustments as needed */
+}
+
+a{
+    text-decoration: none;
+    color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+a:hover{
+    color: #000000;
+}

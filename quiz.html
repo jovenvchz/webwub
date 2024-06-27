@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=DM+Sans:opsz,wght@9..40,500&family=IBM+Plex+Mono:wght@600&family=Josefin+Sans:wght@500&family=Libre+Baskerville&family=Roboto+Condensed&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <section>
+        <div>
+          <img id="question-mark" src="./images/question-mark.png" />
+          <div id="newpost" class="hidden">
+            <p>
+              In order to access the password, you must correctly answer every
+              question. <br />
+              You will be given a hint for every correct answer.
+            </p>
+          </div>
+        </div>
+      </section>
+      <div id="quiz">
+        <a href="index.html" class="back">Back</a>
+        <h1 class="page2-heading">Questions</h1>
+        <p class="qs">What is the first movie we watched together?</p>
+        <div>
+          <input
+            class="questions"
+            type="text"
+            id="q1"
+            placeholder="movie"
+            maxlength="6"
+          />
+        </div>
+
+        <p class="qs">When was our first time at the cinema together?</p>
+        <div>
+          <input
+            class="questions"
+            type="text"
+            id="q2"
+            name="q2"
+            placeholder="mm/dd/yyyy"
+            maxlength="10"
+          />
+        </div>
+        <p class="qs">What is our favorite song?</p>
+        <div>
+          <input
+            class="questions"
+            type="text"
+            id="q3"
+            name="q3"
+            placeholder="title"
+            maxlength="5"
+          />
+          <p class="qs">What did you do with toothpaste when you were a kid?</p>
+          <div>
+            <input
+              class="questions"
+              type="text"
+              id="q4"
+              name="q4"
+              placeholder="use it"
+              maxlength="6"
+            />
+          </div>
+          <p class="qs">How many frogs are there?</p>
+          <div>
+            <input
+              class="questions"
+              type="text"
+              id="q5"
+              name="q5"
+              placeholder="number"
+              maxlength="1"
+            />
+          </div>
+          <div>
+            <button id="myBtn">Check</button>
+          </div>
+        </div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <!-- <span class="close">&times;</span> -->
+            <p id="text-result"></p>
+            <button id="restart">Try again</button>
+            <a href="fpage.html"
+              ><button class="gtwebsite">Enter Password</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     function displayForQ2() {
-        let ans2 = "11/01/2024";
+        let ans2 = "11/01/2023";
         let q2 = document.querySelector("#q2");
 
         if (q2.value === ans2) {
